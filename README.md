@@ -1,6 +1,6 @@
 # 💡 momentum-clone
 
-[👀 momentum 보기]()
+[👀 momentum 보기](https://tnalswkd.github.io/momentum-clone/)
 
 - 바닐라 JS를 사용한 크롬 확장프로그램 **Momentum 클론 프로젝트** 입니다.
 - 사용자의 위치 정보를 가져와 현재 위치,날씨,시간 정보를 제공합니다.
