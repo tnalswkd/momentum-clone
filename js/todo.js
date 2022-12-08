@@ -23,7 +23,7 @@ function paintToDo(newTodo) {
   const span = document.createElement('span');
   span.innerText = newTodo.text;
   const button = document.createElement('button');
-  button.innerText = '✖️';
+  button.innerText = '✕';
   button.addEventListener('click', deleteToDo);
   li.appendChild(span);
   li.appendChild(button);
@@ -52,5 +52,6 @@ if (savedToDos !== null) {
   // JavaScript Object로
   const parsedToDos = JSON.parse(savedToDos);
   toDos = parsedToDos;
+  parsedToDos.forEach(paintToDo);
   // parsedToDos.forEach((item) => console.log('this is the turn of' + item));
 }

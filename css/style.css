@@ -1,3 +1,143 @@
+body {
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  color: white;
+}
 .hidden {
   display: none;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.js-clock {
+  font-size: 150px;
+  position: absolute;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+
+input {
+  background-color: transparent;
+  color: white;
+  border: none;
+  border-bottom: 1px solid white;
+  width: 350px;
+  height: 50px;
+  text-align: center;
+  font-size: 20px;
+}
+
+input::placeholder {
+  color: white;
+  font-size: 18px;
+  text-align: center;
+}
+
+input:focus {
+  outline: none;
+}
+
+button {
+  all: unset;
+  margin-left: 10px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+#login-form {
+  position: absolute;
+  top: 430px;
+}
+
+#greeting {
+  position: absolute;
+  top: 430px;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+#todo-form {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 400px;
+}
+
+#todo-list {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 400px;
+}
+
+li {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+#todo-form {
+  margin-top: 120px;
+  font-weight: lighter;
+}
+
+#todo-list {
+  margin-top: 200px;
+  box-sizing: border-box;
+}
+
+#quote {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 10px;
+  color: #d5d5d5;
+}
+
+#weather {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  right: 0;
+  margin-top: 30px;
+  margin-right: 30px;
+  font-style: italic;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#weather span:last-child {
+  margin-left: 5px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+img {
+  position: absolute;
+  margin-top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-color: transparent;
+  animation: fadeIn 0.3s linear;
 }
