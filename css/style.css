@@ -85,11 +85,6 @@ button {
   top: 400px;
 }
 
-li {
-  margin-bottom: 10px;
-  font-size: 18px;
-}
-
 #todo-form {
   margin-top: 120px;
   font-weight: lighter;
@@ -98,6 +93,11 @@ li {
 #todo-list {
   margin-top: 200px;
   box-sizing: border-box;
+}
+
+li {
+  margin-bottom: 10px;
+  font-size: 18px;
 }
 
 #quote {
@@ -117,6 +117,7 @@ li {
   font-style: italic;
   font-size: 14px;
   font-weight: bold;
+  color: rgba(0, 0, 0, 0.7);
 }
 
 #weather span:last-child {
